@@ -71,3 +71,14 @@ footer{background:var(--black);color:var(--cream);display:flex;justify-content:s
  .bloom-footer span:last-child{max-width:125px;text-align:right}
 }
 @media(prefers-reduced-motion:reduce){.flower{will-change:auto}}
+
+/* Fine-line botanical wall: the exact reference art is the initial frame. */
+.tattoo-bloom{height:310vh;background:#080908;color:#f3e7d6}
+.tattoo-bloom .bloom-sticky{height:100vh;min-height:0;padding:0;overflow:hidden}
+.tattoo-stems,#tattoo-canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.tattoo-stems{background:#080908}
+#stem-art{width:100%;height:100%}
+#tattoo-canvas{z-index:2}
+.tattoo-caption{position:absolute;z-index:3;bottom:22px;left:3vw;right:3vw;display:flex;justify-content:space-between;gap:15px;color:#fff;font:10px var(--mono);letter-spacing:.15em;text-shadow:0 1px 9px #000;background:rgba(0,0,0,.35);padding:10px 12px;width:max-content;max-width:94vw;pointer-events:none}
+.tattoo-caption span{color:#ffb57e}
+@media(max-width:600px){.tattoo-caption{font-size:8px;flex-direction:column}}
