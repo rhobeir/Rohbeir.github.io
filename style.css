@@ -35,12 +35,14 @@ footer{background:var(--black);color:var(--cream);display:flex;justify-content:s
 
 .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}.reveal.seen{opacity:1;transform:none}
 
-/* V13: cut-paper wall built from the six approved retracting flower systems. */
+/* V14: cut-paper wall built from the six approved retracting flower systems. */
 html{scroll-behavior:smooth}
 body.intro-locked{overflow:hidden;height:100vh;touch-action:none}
-.garden-intro{position:fixed;inset:0;z-index:65;isolation:isolate;overflow:hidden;background:#d45311;touch-action:none;transition:opacity .34s ease,visibility .34s ease;background-image:radial-gradient(circle at 20% 18%, rgba(255,192,141,.14), transparent 32%),radial-gradient(circle at 81% 22%, rgba(255,208,175,.10), transparent 29%),radial-gradient(circle at 48% 70%, rgba(255,150,94,.07), transparent 36%)}
+.garden-intro{position:fixed;inset:0;z-index:65;isolation:isolate;overflow:hidden;background:#d45311 url('images/tattoo-flower-wall.png') center/cover no-repeat;touch-action:none;transition:opacity .34s ease,visibility .34s ease;background-image:radial-gradient(circle at 20% 18%, rgba(255,192,141,.14), transparent 32%),radial-gradient(circle at 81% 22%, rgba(255,208,175,.10), transparent 29%),radial-gradient(circle at 48% 70%, rgba(255,150,94,.07), transparent 36%)}
+.garden-intro.is-ready{background:transparent}
+.garden-backdrop{position:absolute;inset:0;background:#d45311;background-image:radial-gradient(circle at 24% 18%,rgba(255,212,165,.09),transparent 46%),radial-gradient(circle at 82% 70%,rgba(255,128,74,.08),transparent 45%);will-change:opacity}
 .garden-intro.is-dismissed{opacity:0;visibility:hidden;pointer-events:none}
-.garden-canvas{display:block;position:absolute;inset:0;width:100%;height:100%;opacity:1}
+.garden-canvas{display:block;position:absolute;inset:0;width:100%;height:100%;opacity:0;transition:opacity .2s ease}.garden-intro.is-ready .garden-canvas{opacity:1}
 .garden-wordmark{position:absolute;left:50%;top:49%;z-index:4;transform:translate(-50%,-50%);white-space:nowrap;margin:0;font:600 clamp(70px,18.4vw,355px)/.73 var(--sans);letter-spacing:-.108em;color:#3a3a3a;mix-blend-mode:multiply;pointer-events:none;will-change:transform,opacity}
 .garden-edition{position:absolute;z-index:5;top:26px;left:3.2vw;right:3.2vw;display:flex;justify-content:space-between;gap:1rem;font:10px var(--mono);letter-spacing:.16em;color:#fff2dc;text-shadow:0 2px 6px rgba(114,35,5,.25);pointer-events:none}
 .garden-scrollcue{position:absolute;z-index:6;left:50%;bottom:34px;transform:translateX(-50%);background:transparent;border:1px solid rgba(255,239,218,.7);padding:11px 17px;color:#fff6ec;font:10px var(--mono);letter-spacing:.17em;white-space:nowrap;cursor:pointer;backdrop-filter:blur(4px)}
