@@ -1,4 +1,4 @@
-// ROHBEIR V14 — fixed canvas + one embedded optimized cut-paper atlas; six approved blooms.
+// ROHBEIR V15 — edge-reaching hand-engraved stems; same approved six flower systems.
 (() => {
   'use strict';
   const overlay=document.getElementById('garden-intro');
@@ -84,6 +84,105 @@
     ctx.restore();
   }
 
+
+  // Extend the real collage stems to the screen boundary. The extension is drawn
+  // behind the flower collage, is connected to the stem cutout, and remains
+  // attached to the flower as it exits. Every extension reaches TOP/LEFT/RIGHT.
+  function drawEdgeStem(inst, flower, state, id){
+    const scale=inst.s*state.wallScale;
+    const angle=(inst.r+state.rotation)*rad;
+    const ca=Math.cos(angle), sa=Math.sin(angle);
+    // The cutout's genuine end is ~176 local units below its upper attachment.
+    const rootX=2+2.5*Math.sin((flower.stemAngle??4)*rad);
+    const rootY=176;
+    const sx=inst.x*state.wallScale + state.offsetX + state.pullX + scale*(rootX*ca-rootY*sa);
+    const sy=inst.y*state.wallScale + state.offsetY + state.pullY + scale*(rootX*sa+rootY*ca);
+    const vecX=inst.exit[0]*W, vecY=inst.exit[1]*H;
+    const len=Math.hypot(vecX,vecY)||1;
+    const ux=vecX/len, uy=Math.min(-0.001,vecY/len);
+    const intersections=[];
+    if(ux<-.001) intersections.push((0-sx)/ux);
+    if(ux>.001) intersections.push((W-sx)/ux);
+    if(uy<-.001) intersections.push((0-sy)/uy);
+    const candidates=intersections.filter(n=>n>0);
+    const travel=candidates.length?Math.min(...candidates):Math.max(W,H)*0.35;
+    const ex=sx+ux*(travel+25), ey=sy+uy*(travel+25);
+    const dist=Math.hypot(ex-sx,ey-sy);
+    if(dist<3) return;
+    const nx=-uy, ny=ux;
+    // Larger, asymmetric S-curves are deliberately not mirror images.
+    const swing=(((id*43+11)%23)-11)/11;
+    const swing2=(((id*17+9)%19)-9)/9;
+    const bend=swing*Math.min(105,dist*.19);
+    const bend2=swing2*Math.min(90,dist*.17);
+    const c1x=sx+(ex-sx)*.24+nx*bend;
+    const c1y=sy+(ey-sy)*.24+ny*bend;
+    const c2x=sx+(ex-sx)*.70+nx*bend2;
+    const c2y=sy+(ey-sy)*.70+ny*bend2;
+    const point=t=>{
+      const v=1-t;
+      return [v*v*v*sx+3*v*v*t*c1x+3*v*t*t*c2x+t*t*t*ex,
+              v*v*v*sy+3*v*v*t*c1y+3*v*t*t*c2y+t*t*t*ey];
+    };
+    const samples=Math.max(24,Math.ceil(dist/20));
+    const left=[], right=[];
+    // The starting width approximates the existing photographic stem's width.
+    const width0=Math.max(16,31*scale);
+    const normal=t=>{
+      const [a,b]=point(Math.max(0,t-.002));
+      const [c,d]=point(Math.min(1,t+.002));
+      const mag=Math.hypot(c-a,d-b)||1;
+      return [-(d-b)/mag,(c-a)/mag];
+    };
+    for(let i=0;i<=samples;i++){
+      const t=i/samples,[x,y]=point(t),[px,py]=normal(t);
+      // Organic taper and tiny stable contour irregularities.
+      const width=width0*(1-.38*t)*(1+.035*Math.sin(t*32+id*.73));
+      left.push([x+px*width*.5,y+py*width*.5]);
+      right.push([x-px*width*.5,y-py*width*.5]);
+    }
+    ctx.save();
+    ctx.beginPath();ctx.moveTo(...left[0]);
+    for(let i=1;i<left.length;i++)ctx.lineTo(...left[i]);
+    for(let i=right.length-1;i>=0;i--)ctx.lineTo(...right[i]);
+    ctx.closePath();
+    ctx.fillStyle='#79663e';
+    ctx.fill();
+    ctx.lineWidth=1.05;
+    ctx.strokeStyle='rgba(255,235,204,.66)';
+    ctx.stroke();
+    // The original cutouts have hundreds of fine pale engraved fibers.
+    // Clip the fibers inside the paper-stem silhouette to preserve that texture.
+    ctx.clip();
+    for(let j=-8;j<=8;j++){
+      ctx.beginPath();
+      const start=(j%4)*.015;
+      for(let i=0;i<=samples;i++){
+        const t=i/samples,[x,y]=point(t),[nx,ny]=normal(t);
+        const offset=(j/9)*width0*.45*(1-.38*t)+Math.sin(t*(16+(j%5)*3)+id+j)*(.5+(j%3)*.17);
+        const lx=x+nx*offset,ly=y+ny*offset;
+        if(i===0) ctx.moveTo(lx,ly); else ctx.lineTo(lx,ly);
+      }
+      const light=(j%3!==0);
+      ctx.strokeStyle=light?'rgba(255,240,212,.60)':'rgba(49,43,25,.30)';
+      ctx.lineWidth=(j%4===0?.8:.48);
+      ctx.stroke();
+    }
+    // Tiny diagonal etched lines across the fibers give a real woodcut look.
+    for(let k=1;k<Math.floor(dist/19);k++){
+      const t=k*19/dist,[x,y]=point(t),[nx,ny]=normal(t);
+      const dir=k%2?1:-1;
+      const half=width0*(1-.38*t)*.24;
+      ctx.beginPath();
+      ctx.moveTo(x-nx*half,y-ny*half);
+      ctx.lineTo(x+nx*half+ux*7*dir,y+ny*half+uy*7*dir);
+      ctx.lineWidth=.43;
+      ctx.strokeStyle='rgba(248,232,202,.33)';
+      ctx.stroke();
+    }
+    ctx.restore();
+  }
+
   function drawFlower(flower, instance, state){
     const centerX=instance.x*state.wallScale + state.offsetX + state.pullX;
     const centerY=instance.y*state.wallScale + state.offsetY + state.pullY;
@@ -132,23 +231,17 @@
     const offsetX=(W-1536*wallScale)/2;
     const offsetY=(H-900*wallScale)/2;
 
-    // draw layered flowers in slight row order to preserve overlap richness
-    layout.forEach((inst, idx)=>{
+    // Compose the full screen-edge stems first so the photographic petals sit on top.
+    const states=layout.map((inst, idx)=>{
       const localBud=phase(bud, inst.delay*0.55, Math.min(1,0.92+inst.delay*0.2));
       const localPull=phase(pull, inst.delay*0.45, Math.min(1,0.96+inst.delay*0.08));
       const dx=inst.exit[0]*(W*0.95)*localPull;
       const dy=inst.exit[1]*(H*0.95)*localPull;
       const jitter=Math.sin((progress+idx*0.07)*Math.PI*2)*4*(1-localPull);
-      drawFlower(FLOWERS[inst.f], inst, {
-        bud: localBud,
-        pullX: dx,
-        pullY: dy,
-        rotation: jitter,
-        wallScale,
-        offsetX,
-        offsetY
-      });
+      return {bud:localBud,pullX:dx,pullY:dy,rotation:jitter,wallScale,offsetX,offsetY};
     });
+    layout.forEach((inst,idx)=>drawEdgeStem(inst,FLOWERS[inst.f],states[idx],idx));
+    layout.forEach((inst,idx)=>drawFlower(FLOWERS[inst.f],inst,states[idx]));
     ctx.restore();
 
     word.style.transform=`translate(-50%, calc(-50% - ${wordOut*120}vh))`;
