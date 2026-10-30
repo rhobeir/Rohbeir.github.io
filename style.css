@@ -37,18 +37,25 @@ footer{background:var(--black);color:var(--cream);display:flex;justify-content:s
 
 
 
-/* V8 image-derived botanical prologue: EXACT original art in the first frame. */
+/* V9: engraved botanical collage; each SVG petal is an individual path. */
 html{scroll-behavior:auto}
-.garden-intro{position:relative;height:430vh;height:430dvh;isolation:isolate;z-index:25;pointer-events:none}
-.garden-screen{position:sticky;top:0;isolation:isolate;overflow:hidden;height:100vh;height:100dvh;pointer-events:none}
-.garden-darkness{position:absolute;inset:0;background:#12100e;z-index:0}
-#garden-canvas,#garden-wall{position:absolute;inset:0;display:block;width:100%;height:100%;z-index:1}
-#garden-canvas{z-index:2}
-#garden-wall{z-index:3;object-fit:cover;object-position:center center;will-change:opacity}
-.garden-wordmark{position:absolute;z-index:4;top:48%;left:50%;transform:translate(-50%,-50%);margin:0;font:600 clamp(68px,17.8vw,340px)/.76 var(--sans);letter-spacing:-.103em;white-space:nowrap;color:#3a3635;text-align:center;will-change:transform,opacity}
-.garden-edition{position:absolute;z-index:5;top:27px;left:3.3vw;right:3.3vw;display:flex;justify-content:space-between;gap:1rem;font:10px var(--mono);letter-spacing:.15em;color:#fff0e5;text-shadow:0 1px 6px #653015}
-.garden-scrollcue{position:absolute;z-index:5;left:50%;bottom:29px;transform:translateX(-50%);font:10px var(--mono);letter-spacing:.16em;color:#fff1e6;text-shadow:0 1px 7px #54260b;white-space:nowrap}
-.garden-scrollcue span{margin-left:10px}
-.garden-intro + .header{position:relative;z-index:3}
-@media(max-width:760px){.garden-intro{height:380vh;height:380dvh}.garden-wordmark{font-size:19.6vw;letter-spacing:-.115em}.garden-edition{font-size:8px}.garden-scrollcue{font-size:9px}}
+.garden-intro{position:relative;height:440vh;height:440dvh;isolation:isolate;z-index:25;pointer-events:none}
+.garden-screen{position:sticky;top:0;overflow:hidden;isolation:isolate;height:100vh;height:100dvh;pointer-events:none;background:transparent}
+.garden-surface{position:absolute;inset:0;background:#d4510b;will-change:opacity;z-index:0}
+.garden-svg{display:block;position:absolute;inset:0;width:100%;height:100%;z-index:1;overflow:hidden;will-change:opacity}
+.garden-svg .flower-system{will-change:transform}
+.garden-svg .petal{will-change:transform}
+.garden-wordmark{position:absolute;z-index:5;top:49%;left:50%;transform:translate(-50%,-50%);margin:0;font:600 clamp(68px,17.65vw,332px)/.75 var(--sans);letter-spacing:-.105em;color:#363333;white-space:nowrap;text-align:center;will-change:transform,opacity;mix-blend-mode:multiply}
+.garden-edition{position:absolute;z-index:6;top:29px;left:3.4vw;right:3.4vw;display:flex;justify-content:space-between;gap:1rem;font:10px var(--mono);letter-spacing:.16em;color:#fff1d6;text-shadow:0 2px 6px #9b370c}
+.garden-scrollcue{position:absolute;z-index:6;left:50%;bottom:38px;transform:translateX(-50%);font:10px var(--mono);letter-spacing:.17em;color:#fff3e4;white-space:nowrap;text-shadow:0 2px 6px #a43a0a;will-change:opacity}
+.garden-scrollcue span{margin-left:8px}
+.garden-progress{position:absolute;left:0;bottom:0;height:3px;width:100%;z-index:7;background:rgba(255,243,218,.16)}
+.garden-progress span{display:block;width:100%;height:100%;background:#fcebd2;transform-origin:0 50%;transform:scaleX(0)}
+.garden-svg .vine-stroke{fill:none;stroke:#ffe9cb;stroke-width:1.35;vector-effect:non-scaling-stroke;stroke-linecap:round}
+.garden-svg .vine-echo{fill:none;stroke:#fae3c4;stroke-width:.68;opacity:.55;vector-effect:non-scaling-stroke}
+.garden-svg .petal-outline{stroke:#ffebd1;stroke-width:1.15;vector-effect:non-scaling-stroke;stroke-linejoin:round}
+.garden-svg .petal-engraving{fill:none;stroke:#ffedda;stroke-width:.75;opacity:.80;stroke-linecap:round;vector-effect:non-scaling-stroke}
+.garden-svg .petal-micro{fill:none;stroke:#fff1da;stroke-width:.48;opacity:.65;stroke-linecap:round;vector-effect:non-scaling-stroke}
+.garden-svg .bud-mark{fill:none;stroke:#ffefd8;stroke-width:.85;vector-effect:non-scaling-stroke}
+@media(max-width:760px){.garden-intro{height:385vh;height:385dvh}.garden-wordmark{font-size:19vw;letter-spacing:-.108em}.garden-edition{font-size:8px}.garden-scrollcue{font-size:9px}}
 @media(prefers-reduced-motion:reduce){.garden-intro{height:100vh;height:100dvh}.garden-wordmark{will-change:auto}}

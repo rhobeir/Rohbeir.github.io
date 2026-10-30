@@ -8,21 +8,27 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Libre+Baskerville:ital,wght@0,400;1,400&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=8-imagepetals">
+  <link rel="stylesheet" href="style.css?v=9-engraved">
 </head>
 <body>
   <div class="noise" aria-hidden="true"></div>
 
   <main id="top">
-    <!-- FRAME 01: exact original artwork; canvas samples this same image for every moving piece. -->
-    <section class="garden-intro" id="garden-intro" aria-label="ROHBEIR botanical entrance, scroll to reveal the archive">
+    <!-- V9: Every flower and every etched petal is a separately animated SVG element. -->
+    <section class="garden-intro" id="garden-intro" aria-label="ROHBEIR botanical entrance; scroll to open the archive">
       <div class="garden-screen" id="garden-screen">
-        <div class="garden-darkness" aria-hidden="true"></div>
-        <canvas id="garden-canvas" aria-hidden="true"></canvas>
-        <img id="garden-wall" src="images/tattoo-flower-wall.png" alt="" aria-hidden="true" decoding="async" fetchpriority="high">
+        <div class="garden-surface" id="garden-surface" aria-hidden="true"></div>
+        <svg id="garden-svg" class="garden-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Dense orange and ivory engraved flowers">
+          <defs id="garden-definitions">
+            <linearGradient id="petal-ink" x1="0" y1="1" x2="0.65" y2="0"><stop offset="0" stop-color="#b93e0a"/><stop offset=".53" stop-color="#d9510e"/><stop offset="1" stop-color="#e7631c"/></linearGradient>
+            <linearGradient id="petal-ink-2" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#c2460b"/><stop offset=".56" stop-color="#db580c"/><stop offset="1" stop-color="#ed711b"/></linearGradient>
+          </defs>
+          <g id="garden-flower-systems"></g>
+        </svg>
         <h1 class="garden-wordmark" id="garden-wordmark">ROHBEIR</h1>
-        <div class="garden-edition" aria-hidden="true"><span>AN ARCHIVE OF MAKING</span><span>EST. 2026</span></div>
-        <div class="garden-scrollcue" aria-hidden="true">SCROLL TO UNFOLD <span>↓</span></div>
+        <div class="garden-edition"><span>AN ARCHIVE OF MAKING</span><span>EST. 2026</span></div>
+        <div class="garden-scrollcue" id="garden-scrollcue">SCROLL TO UNFOLD <span>↓</span></div>
+        <div class="garden-progress" aria-hidden="true"><span id="garden-progress-fill"></span></div>
       </div>
     </section>
   <header class="header">
@@ -133,6 +139,6 @@
   </main>
 
   <footer><span>ORANGE / OBJECTS</span><span>© 2026</span><span>BUILT FOR THE GITHUB</span></footer>
-  <script src="script.js?v=8-imagepetals" defer></script>
+  <script src="script.js?v=9-engraved" defer></script>
 </body>
 </html>
