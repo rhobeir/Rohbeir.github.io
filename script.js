@@ -1,4 +1,4 @@
-// ROHBEIR V18 — harmonized vine ornaments matched to the flower / bud palette.
+// ROHBEIR V19 — harmonized vines at the same opacity as the flowers.
 (() => {
   'use strict';
   const overlay=document.getElementById('garden-intro');
@@ -130,7 +130,7 @@
     const rot=baseAngle + jitter;
 
     // Let the vine 'take over' more clearly during the pull phase.
-    const fade=0.12 + 0.70*reveal;
+    const fade=1;
     ctx.save();
     ctx.globalAlpha=fade;
     ctx.translate(sx, sy);
