@@ -8,13 +8,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Libre+Baskerville:ital,wght@0,400;1,400&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=19-full-opacity-vines">
+  <link rel="stylesheet" href="style.css?v=20-photo-archive">
 </head>
 <body>
   <div class="noise" aria-hidden="true"></div>
 
 
-  <!-- V19: same approved flowers, with harmonized vines now rendered at full flower-level opacity. -->
+  <!-- V20: original approved cut-paper flower intro, with curated photography and connected photo archive. -->
   <div class="garden-intro" id="garden-intro" aria-label="ROHBEIR botanical opening. Scroll once to enter the website.">
     <div class="garden-backdrop" id="garden-backdrop" aria-hidden="true"></div>
     <canvas class="garden-canvas" id="garden-canvas" aria-hidden="true"></canvas>
@@ -32,9 +32,10 @@
   </header>
 
   <div class="menu-panel">
-    <a href="#work">01 — WORK</a>
-    <a href="#about">02 — ABOUT</a>
-    <a href="#contact">03 — CONTACT</a>
+    <a href="#work">01 — SELECTED WORK</a>
+    <a href="archive.html">02 — PHOTO ARCHIVE</a>
+    <a href="#about">03 — ABOUT</a>
+    <a href="#contact">04 — CONTACT</a>
   </div>
 
 
@@ -44,13 +45,13 @@
         <div class="hero-copy">
           <p class="eyebrow">WELCOME TO</p>
           <h1>orange<br><em>objects</em></h1>
-          <p class="lede">A visual diary of food, jewelry, handmade things, and whatever comes next.</p>
-          <a class="enter" href="#work"><span>ENTER<br>THE ARCHIVE</span><b>↓</b></a>
+          <p class="lede">A living collection of plates, projects, kitchen experiments and things made by hand.</p>
+          <a class="enter" href="archive.html"><span>VIEW<br>THE ARCHIVE</span><b>↗</b></a>
         </div>
 
         <div class="hero-image">
-          <div class="image-frame"><img src="images/01-steak-board.png" alt="Steak, tomatoes, and toasted bread on a wooden board"></div>
-          <div class="hero-tag">PLATE 001<br>DINNER</div>
+          <div class="image-frame cutout-frame"><img src="images/cutouts/fire-and-greens-cutout.png" alt="Delicately plated seafood crudo with flowers and green garnish"></div>
+          <div class="hero-tag">PLATE / 001<br>CRUDO IN BLOOM</div>
         </div>
         <div class="sun">✳</div>
       </div>
@@ -65,36 +66,37 @@
           <p class="eyebrow">SELECTED WORK</p>
           <h2>Things I've<br><em>been making.</em></h2>
         </div>
-        <p class="work-intro">The stock photos are gone. These are yours now — imperfect, immediate, and much more interesting.</p>
+        <p class="work-intro">A few frames from behind the pass, around the table, and everywhere in between. There is always more happening than the finished plate.</p>
       </div>
 
-      <div class="gallery">
-        <article class="work-card big">
-          <div class="media"><img src="images/01-steak-board.png" alt="Steak, roasted tomatoes and bread"></div>
-          <div class="caption"><span>01 / FOOD</span><strong>Steak night</strong><small>board / bread / tomatoes</small></div>
-        </article>
-
-        <article class="work-card bread">
-          <div class="media"><img src="images/02-sourdough.png" alt="A rustic loaf of sourdough bread"></div>
-          <div class="caption"><span>02 / BREAD</span><strong>Loaf study</strong><small>crust + crumb</small></div>
-        </article>
-
-        <article class="manifesto">
-          <span>✳</span>
-          <p>good things<br>take a little<br><em>mess.</em></p>
-          <small>A WORKING PRINCIPLE</small>
-        </article>
-
-        <article class="work-card sushi">
-          <div class="media"><img src="images/03-sushi-prep.png" alt="Sushi ingredients being prepared in a kitchen"></div>
-          <div class="caption"><span>03 / PROCESS</span><strong>Before the roll</strong><small>prep table / hands / mise en place</small></div>
-        </article>
-
-        <article class="work-card peppers">
-          <div class="media"><img src="images/05-peppers-knife.png" alt="Diced peppers on a kitchen knife"></div>
-          <div class="caption"><span>04 / PROCESS</span><strong>Knife work</strong><small>red pepper / repetition</small></div>
-        </article>
-      </div>
+      <div class="featured-grid">
+<a class="featured-card feature--one" href="archive.html" aria-label="Explore the photo archive: Fire and greens">
+ <div class="featured-photo cutout-photo"><img loading="lazy" decoding="async" src="images/cutouts/crudo-in-bloom-cutout.png" alt="Charred seafood with greens and a glossy sauce on an irregular plate"></div>
+ <div class="featured-meta"><span>01 / PLATES</span><strong>Fire and greens</strong><small>FROM THE PHOTO ARCHIVE ↗</small></div>
+ </a><a class="featured-card feature--two" href="archive.html" aria-label="Explore the photo archive: Crudo in bloom">
+ <div class="featured-photo cutout-photo"><img loading="lazy" decoding="async" src="images/cutouts/fire-and-greens-cutout.png" alt="Delicately plated seafood crudo with flowers and green garnish"></div>
+ <div class="featured-meta"><span>02 / PLATES</span><strong>Crudo in bloom</strong><small>FROM THE PHOTO ARCHIVE ↗</small></div>
+ </a><div class="featured-note"><span class="featured-glyph">✳</span><p>The pretty ones,<br>cut loose from the<br><em>background.</em></p><span class="featured-note-label">CURATED SELECTION / 2026</span></div>
+<a class="featured-card feature--three" href="archive.html" aria-label="Explore the photo archive: Lunch in the sun">
+ <div class="featured-photo cutout-photo"><img loading="lazy" decoding="async" src="images/cutouts/lunch-in-the-sun-cutout.png" alt="A composed lunch bowl held in a hand"></div>
+ <div class="featured-meta"><span>03 / PLATES</span><strong>Lunch in the sun</strong><small>FROM THE PHOTO ARCHIVE ↗</small></div>
+ </a><a class="featured-card feature--four" href="archive.html" aria-label="Explore the photo archive: Loaf in hand">
+ <div class="featured-photo cutout-photo"><img loading="lazy" decoding="async" src="images/cutouts/panzerotti-trio-cutout.png" alt="A rustic round sourdough loaf supported on a folded cloth"></div>
+ <div class="featured-meta"><span>04 / BAKING</span><strong>Loaf in hand</strong><small>FROM THE PHOTO ARCHIVE ↗</small></div>
+ </a><a class="featured-card feature--five" href="archive.html" aria-label="Explore the photo archive: Blue plate morning">
+ <div class="featured-photo cutout-photo"><img loading="lazy" decoding="async" src="images/cutouts/blue-plate-cutout.png" alt="A bright blue plate holding a vibrant savory dish"></div>
+ <div class="featured-meta"><span>05 / PLATES</span><strong>Blue plate morning</strong><small>FROM THE PHOTO ARCHIVE ↗</small></div>
+ </a><a class="featured-card feature--six" href="archive.html" aria-label="Explore the photo archive: Sushi assortment">
+ <div class="featured-photo cutout-photo"><img loading="lazy" decoding="async" src="images/cutouts/sushi-assortment-cutout.png" alt="A sushi assortment on a white plate"></div>
+ <div class="featured-meta"><span>06 / PLATES</span><strong>Sushi assortment</strong><small>FROM THE PHOTO ARCHIVE ↗</small></div>
+ </a><a class="featured-card feature--seven" href="archive.html" aria-label="Explore the photo archive: Three crusts, three fillings">
+ <div class="featured-photo cutout-photo"><img loading="lazy" decoding="async" src="images/cutouts/loaf-in-hand-cutout.png" alt="Three panzerotti prototypes marked cheese, pesto chicken and beef ragu"></div>
+ <div class="featured-meta"><span>07 / RESEARCH</span><strong>Three crusts, three fillings</strong><small>FROM THE PHOTO ARCHIVE ↗</small></div>
+ </a><a class="featured-card feature--eight" href="archive.html" aria-label="Explore the photo archive: Handmade pasta">
+ <div class="featured-photo cutout-photo"><img loading="lazy" decoding="async" src="images/cutouts/pasta-bowl-cutout.png" alt="A gray bowl of handmade pasta with cheese and bright garnish"></div>
+ <div class="featured-meta"><span>08 / FOOD</span><strong>Handmade pasta</strong><small>FROM THE PHOTO ARCHIVE ↗</small></div>
+ </a></div></div>
+<div class="archive-callout"><span>BEYOND THE SELECTED WORK</span><a href="archive.html">The complete photo archive <b>↗</b></a><p>Plates, process, experiments, people, and every messy in-between moment.</p></div>
     </section>
 
     <section class="orange-break">
@@ -113,9 +115,9 @@
           </div>
           <div class="about-copy">
             <h2>I make things I<br><em>want to live with.</em></h2>
-            <p>This is a placeholder bio. Soon this can be your actual story — the food you make, the jewelry you design, the objects you collect, and the little obsessions that tie everything together.</p>
-            <p>The site is intentionally built like an evolving notebook rather than a finished catalog. Add a piece, move something around, change the caption, keep going.</p>
-            <a href="#contact" class="underline">MORE ABOUT ME ↗</a>
+            <p>I spend a lot of time making food, learning by doing, and looking closely at how things come together. This archive collects finished plates, failed ideas, repetitions, and occasional happy accidents.</p>
+            <p>It is less a polished portfolio than an ongoing record of making: kitchen work, small experiments, and objects worth keeping around.</p>
+            <a href="archive.html" class="underline">BROWSE THE WHOLE ARCHIVE ↗</a>
           </div>
         </div>
       </div>
@@ -125,14 +127,14 @@
       <div class="contact-label"><span class="num">03</span><span class="eyebrow">CONTACT</span></div>
       <h2>Let's make<br><em>something.</em></h2>
       <div class="contact-row">
-        <a href="mailto:hello@example.com">HELLO@EXAMPLE.COM ↗</a>
-        <a href="#">INSTAGRAM ↗</a>
+        <a href="archive.html">PHOTO ARCHIVE ↗</a>
+        <span>CONTACT LINKS / COMING SOON</span>
         <span>END OF ISSUE 001</span>
       </div>
     </section>
   </main>
 
-  <footer><span>ORANGE / OBJECTS</span><span>© 2026</span><span>BUILT FOR THE GITHUB</span></footer>
-  <script src="script.js?v=15-edge-stems" defer></script>
+  <footer><span>ORANGE / OBJECTS</span><span>© 2026</span><span>AN ONGOING PERSONAL ARCHIVE</span></footer>
+  <script src="script.js?v=20-photo-archive" defer></script>
 </body>
 </html>

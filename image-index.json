@@ -1,0 +1,452 @@
+[
+  {
+    "original": "1000005066.jpg",
+    "src": "images/archive/01-1000005066.webp",
+    "title": "Handmade filled pasta",
+    "category": "Food",
+    "alt": "A bowl of handmade filled pasta with a dark flecked sauce",
+    "orientation": "tall",
+    "featured": false,
+    "weight": 0
+  },
+  {
+    "original": "143E9C9C-EAFC-4210-BB03-FFE8CFC2A63F_1_105_c.jpeg",
+    "src": "images/archive/02-143e9c9c-eafc-4210.webp",
+    "title": "A complete plate",
+    "category": "Plates",
+    "alt": "A tray with glazed beef, grits, flatbread and cabbage",
+    "orientation": "tall",
+    "featured": false,
+    "weight": 0
+  },
+  {
+    "original": "2FD65CC2-56B4-4612-9FAB-D2D6983B0B07_1_106_c.jpeg",
+    "src": "images/archive/03-2fd65cc2-56b4-4612.webp",
+    "title": "Torch work",
+    "category": "Process",
+    "alt": "Green vegetable slices being charred with a kitchen torch",
+    "orientation": "tall",
+    "featured": false,
+    "weight": 0
+  },
+  {
+    "original": "5112866787463448524.jpg",
+    "src": "images/archive/04-511286678746344852.webp",
+    "title": "A table shared",
+    "category": "People",
+    "alt": "A chef standing by a table full of prepared dishes",
+    "orientation": "wide",
+    "featured": false,
+    "weight": 0
+  },
+  {
+    "original": "5F0A9ABB-4665-489C-A943-8DD2504EDB95_1_102_o.jpeg",
+    "src": "images/archive/05-5f0a9abb-4665-489c.webp",
+    "title": "Three crusts, three fillings",
+    "category": "Research",
+    "alt": "Three panzerotti prototypes marked cheese, pesto chicken and beef ragu",
+    "orientation": "tall",
+    "featured": true,
+    "weight": 0
+  },
+  {
+    "original": "7F1C8CAC-57F0-41AE-B496-C5D488B385F9.jpg",
+    "src": "images/archive/06-7f1c8cac-57f0-41ae.webp",
+    "title": "A plate in the light",
+    "category": "Plates",
+    "alt": "A colorful composed dish held in natural sunlight",
+    "orientation": "tall",
+    "featured": false,
+    "weight": 0
+  },
+  {
+    "original": "82CA5891-FC9A-4F0D-B03D-337B6D958287_1_105_c.jpeg",
+    "src": "images/archive/07-82ca5891-fc9a-4f0d.webp",
+    "title": "The full service",
+    "category": "Plates",
+    "alt": "A finished plate with grits, glazed beef, vegetables and breads",
+    "orientation": "tall",
+    "featured": false,
+    "weight": 0
+  },
+  {
+    "original": "A7CAFE94-8281-4DDC-8490-EDFCA4A65A22_1_105_c.jpeg",
+    "src": "images/archive/08-a7cafe94-8281-4ddc.webp",
+    "title": "Another view of service",
+    "category": "Plates",
+    "alt": "A plated meal with glazed beef, grits and vegetables",
+    "orientation": "tall",
+    "featured": false,
+    "weight": 0
+  },
+  {
+    "original": "D35_7598.JPG",
+    "src": "images/archive/09-d35-7598.webp",
+    "title": "Fresh from the oven",
+    "category": "People",
+    "alt": "Two chefs in a professional kitchen with trays of braided bread",
+    "orientation": "wide",
+    "featured": true,
+    "weight": 0
+  },
+  {
+    "original": "E2F9C262-5D39-43D8-8AB2-F18BC23AF6F1.jpg",
+    "src": "images/archive/10-e2f9c262-5d39-43d8.webp",
+    "title": "Green on green",
+    "category": "Process",
+    "alt": "Large tray of finely cut fresh green herbs",
+    "orientation": "tall",
+    "featured": false,
+    "weight": 0
+  },
+  {
+    "original": "IMG_0676.jpeg",
+    "src": "images/archive/11-img-0676.webp",
+    "title": "Pastry cross-sections",
+    "category": "Baking",
+    "alt": "A tray of laminated filled pastries sliced to show the interior",
+    "orientation": "tall",
+    "featured": false,
+    "weight": 0
+  },
+  {
+    "original": "IMG_1436.jpeg",
+    "src": "images/archive/12-img-1436.webp",
+    "title": "Sushi assortment",
+    "category": "Plates",
+    "alt": "A platter of nigiri, maki, and fried sushi rolls",
+    "orientation": "tall",
+    "featured": false,
+    "weight": 0
+  },
+  {
+    "original": "IMG_2081.jpeg",
+    "src": "images/archive/13-img-2081.webp",
+    "title": "Dessert tasting",
+    "category": "Plates",
+    "alt": "Six assorted plated desserts arranged on an outdoor table",
+    "orientation": "tall",
+    "featured": true,
+    "weight": 0
+  },
+  {
+    "original": "IMG_2092.jpeg",
+    "src": "images/archive/14-img-2092.webp",
+    "title": "Charred flatbreads",
+    "category": "Baking",
+    "alt": "A stack of rustic golden flatbreads in a metal tray",
+    "orientation": "tall",
+    "featured": false,
+    "weight": 0
+  },
+  {
+    "original": "IMG_2415.jpeg",
+    "src": "images/archive/15-img-2415.webp",
+    "title": "Braid study",
+    "category": "Baking",
+    "alt": "Unbaked braided pastry resting in a long loaf mold",
+    "orientation": "tall",
+    "featured": true,
+    "weight": 0
+  },
+  {
+    "original": "IMG_3129.jpeg",
+    "src": "images/archive/16-img-3129.webp",
+    "title": "Tomatoes on the vine",
+    "category": "Ingredients",
+    "alt": "A crate densely filled with bright red tomatoes",
+    "orientation": "tall",
+    "featured": false,
+    "weight": 0
+  },
+  {
+    "original": "IMG_3654.jpeg",
+    "src": "images/archive/17-img-3654.webp",
+    "title": "Bottled experiment",
+    "category": "Research",
+    "alt": "An amber bottle labeled caffeine in a kitchen",
+    "orientation": "tall",
+    "featured": false,
+    "weight": 0
+  },
+  {
+    "original": "IMG_4127.jpeg",
+    "src": "images/archive/18-img-4127.webp",
+    "title": "A colorful plate",
+    "category": "Plates",
+    "alt": "A blue plate with a vibrant savory dish",
+    "orientation": "tall",
+    "featured": false,
+    "weight": 0
+  },
+  {
+    "original": "IMG_4425.jpeg",
+    "src": "images/archive/19-img-4425.webp",
+    "title": "Plating together",
+    "category": "People",
+    "alt": "Two people plating multiple dishes at a home table",
+    "orientation": "wide",
+    "featured": false,
+    "weight": 0
+  },
+  {
+    "original": "IMG_4426.jpeg",
+    "src": "images/archive/20-img-4426.webp",
+    "title": "Six plates, one table",
+    "category": "People",
+    "alt": "A cook standing by a table with six completed pasta plates",
+    "orientation": "wide",
+    "featured": false,
+    "weight": 0
+  },
+  {
+    "original": "IMG_5331.jpeg",
+    "src": "images/archive/21-img-5331.webp",
+    "title": "A finished cake",
+    "category": "Baking",
+    "alt": "A layered cake decorated with frosting and banana slices",
+    "orientation": "tall",
+    "featured": false,
+    "weight": 0
+  },
+  {
+    "original": "IMG_5664.JPG",
+    "src": "images/archive/22-img-5664.webp",
+    "title": "Bread and parcel",
+    "category": "Baking",
+    "alt": "Cut open focaccia loaf and wrapped food parcel on a dark board",
+    "orientation": "wide",
+    "featured": false,
+    "weight": 0
+  },
+  {
+    "original": "IMG_5667.JPG",
+    "src": "images/archive/23-img-5667.webp",
+    "title": "Pasta at the table",
+    "category": "Plates",
+    "alt": "Pasta with grated cheese in a wide gray bowl",
+    "orientation": "wide",
+    "featured": false,
+    "weight": 0
+  },
+  {
+    "original": "IMG_6102.jpeg",
+    "src": "images/archive/24-img-6102.webp",
+    "title": "Loaf in hand",
+    "category": "Baking",
+    "alt": "A rustic round sourdough loaf supported on a folded cloth",
+    "orientation": "wide",
+    "featured": true,
+    "weight": 0
+  },
+  {
+    "original": "IMG_6966.jpeg",
+    "src": "images/archive/25-img-6966.webp",
+    "title": "Two plates, one idea",
+    "category": "Plates",
+    "alt": "Two savory dishes with green sauce and small white dollops",
+    "orientation": "tall",
+    "featured": false,
+    "weight": 0
+  },
+  {
+    "original": "IMG_6968.jpeg",
+    "src": "images/archive/26-img-6968.webp",
+    "title": "A pair of pasta plates",
+    "category": "Plates",
+    "alt": "Two shallow bowls containing pasta with grated cheese",
+    "orientation": "tall",
+    "featured": false,
+    "weight": 0
+  },
+  {
+    "original": "IMG_7009.jpeg",
+    "src": "images/archive/27-img-7009.webp",
+    "title": "Precision cuts",
+    "category": "Process",
+    "alt": "A hand showing a carefully turned vegetable alongside brunoise and batons",
+    "orientation": "tall",
+    "featured": false,
+    "weight": 0
+  },
+  {
+    "original": "IMG_7139.jpeg",
+    "src": "images/archive/28-img-7139.webp",
+    "title": "Peaches ready for service",
+    "category": "Ingredients",
+    "alt": "Vacuum packed bright yellow fruit beside a cutting board",
+    "orientation": "tall",
+    "featured": false,
+    "weight": 0
+  },
+  {
+    "original": "IMG_7141.jpeg",
+    "src": "images/archive/29-img-7141.webp",
+    "title": "Something simmering",
+    "category": "Process",
+    "alt": "A saucepan with orange grilled fruit simmering in liquid",
+    "orientation": "tall",
+    "featured": false,
+    "weight": 0
+  },
+  {
+    "original": "IMG_7146.jpeg",
+    "src": "images/archive/30-img-7146.webp",
+    "title": "A glazed rib",
+    "category": "Plates",
+    "alt": "A glazed dark beef rib on a white plate",
+    "orientation": "tall",
+    "featured": false,
+    "weight": 0
+  },
+  {
+    "original": "IMG_7185.jpeg",
+    "src": "images/archive/31-img-7185.webp",
+    "title": "Orange in the pan",
+    "category": "Process",
+    "alt": "A saucepan with golden fruit pieces simmering on a stove",
+    "orientation": "tall",
+    "featured": false,
+    "weight": 0
+  },
+  {
+    "original": "IMG_7274.jpeg",
+    "src": "images/archive/32-img-7274.webp",
+    "title": "Crisp golden crust",
+    "category": "Process",
+    "alt": "Several golden breaded pieces on a baking tray",
+    "orientation": "tall",
+    "featured": false,
+    "weight": 0
+  },
+  {
+    "original": "IMG_7740.jpeg",
+    "src": "images/archive/33-img-7740.webp",
+    "title": "A little dessert",
+    "category": "Plates",
+    "alt": "A small fruit topped cake plated in the middle of a dark dish",
+    "orientation": "tall",
+    "featured": false,
+    "weight": 0
+  },
+  {
+    "original": "IMG_7799.jpeg",
+    "src": "images/archive/34-img-7799.webp",
+    "title": "Fire and greens",
+    "category": "Plates",
+    "alt": "Charred seafood with greens and a glossy sauce on an irregular plate",
+    "orientation": "tall",
+    "featured": true,
+    "weight": 0
+  },
+  {
+    "original": "IMG_7842.jpeg",
+    "src": "images/archive/35-img-7842.webp",
+    "title": "Crudo in bloom",
+    "category": "Plates",
+    "alt": "Delicately plated seafood crudo with flowers and green garnish",
+    "orientation": "tall",
+    "featured": true,
+    "weight": 0
+  },
+  {
+    "original": "IMG_7898.jpeg",
+    "src": "images/archive/36-img-7898.webp",
+    "title": "Knife, board, station",
+    "category": "Process",
+    "alt": "Diced grilled yellow vegetable on a cutting board with a knife",
+    "orientation": "tall",
+    "featured": false,
+    "weight": 0
+  },
+  {
+    "original": "IMG_7943.JPG",
+    "src": "images/archive/37-img-7943.webp",
+    "title": "Marbling",
+    "category": "Ingredients",
+    "alt": "Rows of highly marbled beef cuts on a wooden cutting board",
+    "orientation": "tall",
+    "featured": true,
+    "weight": 0
+  },
+  {
+    "original": "IMG_8002.jpeg",
+    "src": "images/archive/38-img-8002.webp",
+    "title": "Citrus mise en place",
+    "category": "Process",
+    "alt": "Citrus halves and zests on a cutting board beside metal bowls",
+    "orientation": "tall",
+    "featured": false,
+    "weight": 0
+  },
+  {
+    "original": "IMG_8065.jpeg",
+    "src": "images/archive/39-img-8065.webp",
+    "title": "The long stir",
+    "category": "Process",
+    "alt": "Cooking a large pot of thick rice or grain mixture",
+    "orientation": "tall",
+    "featured": false,
+    "weight": 0
+  },
+  {
+    "original": "IMG_8088.jpeg",
+    "src": "images/archive/40-img-8088.webp",
+    "title": "Lunch in the sun",
+    "category": "Plates",
+    "alt": "A composed lunch bowl held over a tatami mat",
+    "orientation": "tall",
+    "featured": false,
+    "weight": 0
+  },
+  {
+    "original": "IMG_8283.jpeg",
+    "src": "images/archive/41-img-8283.webp",
+    "title": "Glowing over coals",
+    "category": "Process",
+    "alt": "Bread or dough pieces cooking over a charcoal grill",
+    "orientation": "tall",
+    "featured": false,
+    "weight": 0
+  },
+  {
+    "original": "IMG_8305.jpeg",
+    "src": "images/archive/42-img-8305.webp",
+    "title": "Herbs laid out",
+    "category": "Process",
+    "alt": "A tray of fine chopped herbs resting on paper towel",
+    "orientation": "tall",
+    "featured": false,
+    "weight": 0
+  },
+  {
+    "original": "IMG_8347.jpeg",
+    "src": "images/archive/43-img-8347.webp",
+    "title": "A whole tray of green",
+    "category": "Process",
+    "alt": "A large tray layered with finely cut green herbs",
+    "orientation": "tall",
+    "featured": false,
+    "weight": 0
+  },
+  {
+    "original": "IMG_8467.jpeg",
+    "src": "images/archive/44-img-8467.webp",
+    "title": "Another batch",
+    "category": "Process",
+    "alt": "Herbs spread on a tray to dry",
+    "orientation": "tall",
+    "featured": false,
+    "weight": 0
+  },
+  {
+    "original": "IMG_8482.jpeg",
+    "src": "images/archive/45-img-8482.webp",
+    "title": "Sashimi cuts",
+    "category": "Process",
+    "alt": "Rows of sliced raw fish arranged on a cutting board",
+    "orientation": "tall",
+    "featured": false,
+    "weight": 0
+  }
+]
